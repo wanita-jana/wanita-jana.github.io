@@ -1,45 +1,56 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	font-family: Lato;
 	font-weight: 300;
 }
 
 
-h1 {
+h1, h2, h5{
 	font-weight: 300;
 	text-align: center;
 	margin-top: 40px;
 }
+
 nav li{
 	font-family: Nanum Gothic;
 	text-transform: uppercase;
 	font-size: 14px;
 }
-.showcase{
-	position: relative;
-	text-align: center;
-}
 
 /*SHOWCASE*/
-
-/*centering text over image*/
-.showcase img{
+.showcase {
+	height: 100%;
 	width: 100%;
-}
-
-.centered {
-
-  position: absolute;
-  width: 50%;
-  top: 30%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  text-align: left;
+	margin: auto;
+	background: url(images/mountain.jpg) no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
 }
 
 .showcase h1{
-	font-family: Lato;
 	color: white;
-	font-weight: 100;
+	font-family: lato;
+	font-weight: 300;
+	text-align: left;
+
+}
+.showcase .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 470px;
+	margin: 0 auto;
 }
 
 /*ABOUT*/
@@ -73,9 +84,10 @@ nav li{
 	letter-spacing: 4px;
 	font-weight: 300;
 	margin-top: 50px;
+	text-align: left;
 }
 
-/*work*/
+/*CASE STUDIES*/
 
 .worktitle h1{
 	font-family: Exo;
@@ -109,11 +121,40 @@ nav li{
 }
 
 .card-body a {
-	font-family: Avenir;
+	font-family: Avenir; 
 	text-transform: uppercase;
 	font-size: 14px;
 
 }
+
+/*ENSEMBLE*/
+
+.mockup img {
+	width: 100%;
+}
+
+.onecol{
+	width: 65%;
+	text-align: center;
+}
+
+/*since parent div of img is text-align center, image gets centered*/
+.onecol img {
+	width: 100%;
+}
+
+.app {
+	width: 80%;
+	text-align: center;
+}
+
+.app img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+
 /*starting at 768px do so and so*/
 @media (min-width: 768px) {
   .about img{
@@ -140,6 +181,10 @@ nav li{
   	margin: auto;
   }
 
+  .caption h2{
+  	text-align: center;
+  }
+
   .caption {
   	text-align: center;
   	margin: 20px;
@@ -156,16 +201,8 @@ nav li{
 	}
 }
 
-/*ENSEMBLE*/
-.mockup img {
-	width: 100%;
-}
-
 
 @media only screen and (max-width: 480px) {
-  .showcase h1{
-  	font-size: 12px;
-  }
 
   .caption {
   	text-align: center;
@@ -174,6 +211,6 @@ nav li{
   	margin-top: -10px;
   }
   .worktitle h1 {
-  	font-size: 20px;
+  	font-size: 22px;
   }
 }

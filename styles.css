@@ -1,228 +1,276 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-	font-family: Lato;
-	font-weight: 300;
+  font-family: Lato;
+  font-weight: 300;
 }
 
-
-h1, h2{
-	font-weight: 300;
-	text-align: center;
-	margin-top: 40px;
+h1,
+h2 {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
 }
 
 h5 {
-	margin-top: 40px;
-	font-family: Avenir;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 14px;
-	letter-spacing: 2px;
-	margin-bottom: 20px;
+  margin-top: 40px;
+  font-family: Avenir;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
-nav li{
-	font-family: Nanum Gothic;
-	text-transform: uppercase;
-	font-size: 14px;
+nav li {
+  font-family: Nanum Gothic;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 /*SHOWCASE*/
 .showcase {
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	background: url(images/mountain.jpg) no-repeat 50% 50%;
-	display: table;
-	top: 0;
-	background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(images/mountain.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
 }
 
-.showcase h1{
-	color: white;
-	font-family: lato;
-	font-weight: 300;
-	text-align: left;
-
+.showcase h1 {
+  color: white;
+  font-family: lato;
+  font-weight: 300;
+  text-align: left;
 }
 .showcase .inner {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	max-width: none;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
 }
 
 .content {
-	max-width: 470px;
-	margin: 0 auto;
+  max-width: 470px;
+  margin: 0 auto;
 }
 
 /*ABOUT*/
 
 .aboutsec {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
-.about img{
-	width: 60%;
-	border-radius: 400px;
-	display: block;
+.about img {
+  width: 60%;
+  border-radius: 400px;
+  display: block;
 }
 
-.caption h1{
-	font-family: Lato;
-	text-transform: uppercase;
-	font-size: 22px;
-	color: #b387a3;
-	letter-spacing: 4px;
-	font-weight: 300;
-	margin-top: 50px;
-	text-align: left;
+.caption h1 {
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #b387a3;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: left;
 }
 
 /*CASE STUDIES*/
 
-.card {
-	margin-bottom: 38px;
+.card-img-top {
+  border-radius: 0;
 }
 
-.worktitle h1{
-	font-family: Lato;
-	text-transform: uppercase;
-	font-size: 22px;
-	color: #b387a3;
-	letter-spacing: 4px;
-	font-weight: 300;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 50px;
+.card {
+  margin-bottom: 38px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0);
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+.worktitle h1 {
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #b387a3;
+  letter-spacing: 4px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .work {
-	width: 100%;
-	margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 /*FLOATING LEFT AND CENTERING DIVS IN ANOTHER DIV*/
 .wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
+.card-body p {
+  font-size: 14px;
 }
 
 .card-body h4 {
-	font-family: Lato;
-	color: grey;
-	font-weight: 100;
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: grey;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.button {
+  border: black;
 }
 
 .card-body a {
-	font-family: Avenir; 
-	text-transform: uppercase;
-	font-size: 14px;
+  position: relative;
+  color: #7a7776;
+  text-decoration: none;
+  font-family: Avenir;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid #7a7776;
+  padding: 7px;
+}
 
+.card-body a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7a7776;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-body a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /*ENSEMBLE*/
 
 .mockup img {
-	width: 100%;
+  width: 100%;
 }
 
-.onecol{
-	width: 65%;
-	text-align: center;
+.onecol {
+  width: 65%;
+  text-align: center;
 }
 
 /*since parent div of img is text-align center, image gets centered*/
 .onecol img {
-	width: 100%;
+  width: 100%;
 }
 
 .app {
-	width: 80%;
-	text-align: center;
+  width: 80%;
+  text-align: center;
 }
 
 .app img {
-	width: 100%;
-	display: block;
-	margin: 0 auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
-.twoscreens img{
-	width: 70%;
+.twoscreens img {
+  width: 70%;
 }
-
 
 /*starting at 768px do so and so*/
 @media (min-width: 768px) {
-  .about img{
-  	margin-left: 40%;
-  	margin-top: 0;
+  .about img {
+    margin-left: 40%;
+    margin-top: 0;
   }
 
-  .caption p{
-  	margin-right: 24%;
+  .caption p {
+    margin-right: 24%;
   }
-    .showcase h1{
-  	font-size: 32px;
+  .showcase h1 {
+    font-size: 32px;
   }
-
 }
 
 /*anything below 767px do so n so*/
 @media only screen and (max-width: 767px) {
-  .showcase h1{
-  	font-size: 20px;
+  .showcase h1 {
+    font-size: 20px;
   }
 
-   .about img{
-  	margin: auto;
+  .about img {
+    margin: auto;
   }
 
-  .caption h2{
-  	text-align: center;
+  .caption h2 {
+    text-align: center;
   }
 
   .caption {
-  	text-align: center;
-  	margin: 20px;
-  	margin-top: -10px;
+    text-align: center;
+    margin: 20px;
+    margin-top: -10px;
   }
 
   .centered {
-  position: absolute;
-  width: 50%;
-  top: 20%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-	}
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .caption {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    margin-top: -10px;
+  }
+  .worktitle h1 {
+    font-size: 22px;
+  }
 }
 
 /*MAYNOOTH*/
 
 .boxshadow img {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media only screen and (max-width: 480px) {
-
-  .caption {
-  	text-align: center;
-  	font-size: 12px;
-  	margin: 10px;
-  	margin-top: -10px;
-  }
-  .worktitle h1 {
-  	font-size: 22px;
-  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

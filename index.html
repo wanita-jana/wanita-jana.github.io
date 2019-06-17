@@ -15,7 +15,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-
+    <!-- Others -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <link
@@ -67,37 +67,44 @@
     </nav>
 
     <!-- Showcase -->
-    <section class="showcase">
-      <div class="inner">
-        <div class="content">
-          <h1 data-aos="fade-right" data-aos-duration="600">
-            Hi, I'm Wanita. I'm a passionate UI/UX designer based in Markham,
-            Ontario.
-          </h1>
-        </div>
-      </div>
+    <section
+      class="showcase d-flex justify-content-center align-items-center m-top"
+    >
+      <h3
+        class="showcase__title w-75 text-left"
+        data-aos="fade-right"
+        data-aos-duration="600"
+      >
+        Hi, I'm Wanita. I'm a passionate UI/UX designer based in Markham,
+        Ontario.
+      </h3>
     </section>
 
     <!-- About Me -->
-
-    <div class="container padding aboutsec" id="aboutsec">
-      <div class="row padding about">
-        <div class="col-md-6">
+    <div id="aboutsec" class="container padding pt-5">
+      <div class="d-flex flex-column align-items-center flex-md-row">
+        <div>
           <img
+            class="about-img"
             data-aos="fade-right"
             data-aos-duration="600"
             src="images/wanita.jpg"
           />
         </div>
-
-        <div class="col-md-6 caption">
-          <h1 data-aos="fade-left" data-aos-duration="600">UI/UX Designer</h1>
+        <div class="px-5">
+          <h3
+            class="section-title text-center"         
+            data-aos="fade-left"
+            data-aos-duration="600"
+          >
+            UI/UX Designer
+          </h3>
           <br />
-          <p data-aos="fade-left" data-aos-duration="600">
+          <p class="text-center" data-aos="fade-left" data-aos-duration="600">
             I love creating beautiful user interfaces while ensuring effective
             user experiences.
           </p>
-          <p data-aos="fade-left" data-aos-duration="600">
+          <p class="text-center" data-aos="fade-left" data-aos-duration="600">
             I utilize user-centred design in order to create interfaces based on
             the user’s needs, allowing for more effective interactions.
           </p>
@@ -106,52 +113,53 @@
     </div>
 
     <!-- Work  -->
-    <div id="work" class="worktitle">
-      <h1>My Work</h1>
-    </div>
-
-    <div class="container padding">
-      <div class="row padding">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="images/ensemble2.png" />
-            <div class="card-body">
-              <h4 class="card-title">Ensemble</h4>
-              <p class="card-text">
-                A concept app that connects local musicians based on the users
-                preferences.
-              </p>
-              <a href="ensemble.html">View</a>
-            </div>
+    <div id="pt-5">
+      <h3
+        class="section-title text-center"
+        data-aos="fade-left"
+        data-aos-duration="600"
+        id="work"
+      >
+        My Work
+      </h3>
+      <div
+        class="d-flex flex-column my-5 mx-md-4 align-items-center flex-md-row justiy-content-around text-center"
+      >
+        <div class="card">
+          <img class="card-img-top" src="images/Maynooth@2x.png" />
+          <div class="card-body">
+            <h4 class="card-title">Maynooth Furniture</h4>
+            <p class="card-text">
+              A concept e-commerce website and app that offers affordable
+              high-end furniture.
+            </p>
+            <a class="btn btn-dark" href="maynooth.html">View</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img class="card-img-top" src="images/ensemble2.png" />
+          <div class="card-body">
+            <h4 class="card-title">Ensemble</h4>
+            <p class="card-text">
+              A concept app that connects local musicians based on the users
+              preferences.
+            </p>
+            <a class="btn btn-dark" href="ensemble.html">View</a>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="images/Maynooth@2x.png" />
-            <div class="card-body">
-              <h4 class="card-title">Maynooth Furniture</h4>
-              <p class="card-text">
-                A concept e-commerce website and app that offers affordable
-                high-end furniture.
-              </p>
-              <a href="maynooth.html">View</a>
-            </div>
+        <div class="card">
+          <img class="card-img-top" src="images/Maynooth@2x.png" />
+          <div class="card-body">
+            <h4 class="card-title">Maynooth Furniture</h4>
+            <a class="btn btn-dark" href="">View</a>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="images/Maynooth@2x.png" />
-            <div class="card-body">
-              <h4 class="card-title">Maynooth Furniture</h4>
-              <a class="button" href="">View</a>
-            </div>
-          </div>
-        </div>
+        </div>      
       </div>
     </div>
 
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

@@ -4,19 +4,34 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Lato;
   font-weight: 300;
+  color: #2C2C2C;
 }
 
 nav {
   position: fixed; top:0;
 }
 
+h1 {
+  font-family: Lato;
+  font-weight: 200;
+  color: #2C2C2C;
+  letter-spacing: 2px;
+}
+
 h2{
   font-weight: 300;
   text-align: center;
   margin-top: 40px;
+}
+
+h4 {
+  font-weight: 300;
 }
 
 h5 {
@@ -29,10 +44,20 @@ h5 {
   margin-bottom: 20px;
 }
 
+h6 {
+  font-family: Open Sans;
+  font-weight: 100;
+  color: grey;
+}
+
 nav li {
   font-family: Nanum Gothic;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.container img {
+  width: 90%;
 }
 
 /*SHOWCASE*/
@@ -40,16 +65,17 @@ nav li {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: url(images/mountain.jpg) no-repeat 50% 50%;
+  background: url(images/background.png) no-repeat 50% 50%;
   display: table;
   top: 0;
   background-size: cover;
 }
 
 .showcase__title {
-  color: white;
+  color: black;
   font-family: lato;
   font-weight: 300;
+  text-transform: uppercase;
 } 
 
 /* About */
@@ -62,7 +88,7 @@ nav li {
 .section-title {
   font-family: Lato;
   text-transform: uppercase;
-  color: #b387a3;
+  color: #90abb3;
   letter-spacing: 4px;
   font-weight: 300;
   margin-top: 50px;
@@ -82,6 +108,9 @@ nav li {
   -webkit-transition: all 0.3s ease-in-out 0s;
 }
 
+.card img{
+  width: 100%;
+}
 /*FLOATING LEFT AND CENTERING DIVS IN ANOTHER DIV*/
 .wrapper {
   display: flex;
@@ -105,14 +134,24 @@ nav li {
 }
 
 .card-body a {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f9f8fa;
+  border: none;
   border-radius: 24px;
   position: relative;
-  color: #ffffff;
+  color: grey;
   text-decoration: none;
-  font-family: Avenir;
+  font-family: Roboto;
   text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  transition: all 0.3s ease 0s;
+
+}
+
+.card-body a:hover {
+  transform: translateY(-7px);
 }
 
 /*ENSEMBLE*/
@@ -132,7 +171,7 @@ nav li {
 }
 
 .onecol video {
-  width: 366px;
+  width: 330px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: none;
   height: 100%;
@@ -157,4 +196,50 @@ nav li {
 
 .boxshadow img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* contact */
+
+ul {
+  color: black;
+}
+
+.myborder {
+  background-color: rgba(255,255,255,0.4);
+  padding: 7%;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+
+}
+
+.contact-title {
+  color: black;
+  font-family: lato;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  
+} 
+
+.contact a{
+  color: black;
+}
+
+.contact a:hover{
+  color: rgb(29, 62, 75);
+}
+
+video {
+  outline: none;
+}
+
+.projects img {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+   .cards {
+      margin: 15%; 
+   }
 }

@@ -33,36 +33,40 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:700&display=swap" rel="stylesheet">
+
     <title>Wanita Jana</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">WJ</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#aboutsec"
-              >About <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">WJ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#aboutsec"
+                >About <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -70,14 +74,17 @@
     <section
       class="showcase d-flex justify-content-center align-items-center m-top"
     >
-      <h3
-        class="showcase__title w-75 text-left"
-        data-aos="fade-right"
-        data-aos-duration="600"
-      >
-        Hi, I'm Wanita. I'm a passionate UI/UX designer based in Markham,
-        Ontario.
-      </h3>
+      <div data-aos="fade-right" class="p-5 text-left">
+        <h2 class="text-left">Hi, I'm Wanita.</h2>
+        <h4
+          class="mt-4"
+          data-aos="fade-right"
+          data-aos-duration="600"
+          style="color: #757473"
+        >
+          I'm a passionate designer focused on UI/UX design based in Markham, ON. 
+        </h4>
+      </div>
     </section>
 
     <!-- About Me -->
@@ -91,39 +98,42 @@
             src="images/wanita.jpg"
           />
         </div>
+
         <div class="px-5">
           <h3
             class="section-title text-center"         
             data-aos="fade-left"
             data-aos-duration="600"
           >
-            UI/UX Designer
+            ABOUT
           </h3>
           <br />
           <p class="text-center" data-aos="fade-left" data-aos-duration="600">
-            I love creating beautiful user interfaces while ensuring effective
-            user experiences.
+            I strive to create beautiful and effective user interfaces by applying user-centered design.
           </p>
           <p class="text-center" data-aos="fade-left" data-aos-duration="600">
-            I utilize user-centred design in order to create interfaces based on
-            the user’s needs, allowing for more effective interactions.
-          </p>
+            I have experience with front-end web development involving HTML5, CSS, JavaScript, Bootstrap and Git.
+          </p>  
         </div>
       </div>
     </div>
 
     <!-- Work  -->
-    <div id="pt-5">
+    
+   
       <h3
         class="section-title text-center"
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-duration="600"
         id="work"
       >
         My Work
       </h3>
+
+    <div data-aos="fade-up"
+        data-aos-duration="600" class="container-fluid px-5">
       <div
-        class="d-flex flex-column my-5 mx-md-4 align-items-center flex-md-row justiy-content-around text-center"
+        class="cards d-flex flex-column my-5  align-items-center flex-md-row justiy-content-around text-center"
       >
         <div class="card">
           <img class="card-img-top" src="images/Maynooth@2x.png" />
@@ -136,7 +146,7 @@
             <a class="btn btn-dark" href="maynooth.html">View</a>
           </div>
         </div>
-        
+
         <div class="card">
           <img class="card-img-top" src="images/ensemble2.png" />
           <div class="card-body">
@@ -148,18 +158,39 @@
             <a class="btn btn-dark" href="ensemble.html">View</a>
           </div>
         </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid px-5">
+      <div
+        class="cards d-flex flex-column my-5  align-items-center flex-md-row justiy-content-around text-center"
+      >
+         <div class="card">
+          <img class="card-img-top" src="images/edzar/logo.png"/>
+          <div class="card-body">
+            <h4 class="card-title">Edzar</h4>
+            <p class="card-text">
+              A clean landing and contact page for Edzar Group of Companies.
+            </p>
+            <a class="btn btn-dark" href="edzar.html">View</a>
+          </div>
+        </div>  
 
         <div class="card">
-          <img class="card-img-top" src="images/Maynooth@2x.png" />
+          <img class="card-img-top" src="images/unica.png" />
           <div class="card-body">
-            <h4 class="card-title">Maynooth Furniture</h4>
-            <a class="btn btn-dark" href="">View</a>
+            <h4 class="card-title">Concept User Interfaces</h4>
+            <p class="card-text">
+              A series of concept user interfaces created with Adobe XD and Adobe Photoshop.
+            </p>
+            <a class="btn btn-dark" href="projects.html">View</a>
           </div>
-        </div>      
-      </div>
+        </div>
     </div>
 
-  
+  </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -182,5 +213,6 @@
     <script>
       AOS.init();
     </script>
+
   </body>
 </html>

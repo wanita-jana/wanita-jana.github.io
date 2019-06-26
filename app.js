@@ -10,7 +10,7 @@ function initialPageLoad() {
     el = document.querySelector(hash);
   }
   activeTab = document.querySelector(".active");
-  if (activeTab) activeTab.classList.remove("active");
+  if (activeTab !== null) activeTab.classList.remove("active");
   el.parentElement.classList.add("active");
   activeTab = el.parentElement;
 }
@@ -27,7 +27,7 @@ function handleTabClick(e) {
 function init() {
   initialPageLoad();
   let navbar = document.querySelector(".navbar-nav");
-  navbar.addEventListener("click", handleTabClick);
+  if (navbar !=== null) navbar.addEventListener("click", handleTabClick);
 }
 
 init();

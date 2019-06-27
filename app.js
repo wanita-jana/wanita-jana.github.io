@@ -27,7 +27,7 @@ function handleTabClick(e) {
 function init() {
   initialPageLoad();
   let navbar = document.querySelector(".navbar-nav");
-  if (navbar !=== null) navbar.addEventListener("click", handleTabClick);
+  if (navbar !== null) navbar.addEventListener("click", handleTabClick);
 }
 
 init();

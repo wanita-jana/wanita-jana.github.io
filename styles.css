@@ -156,12 +156,15 @@ nav li {
 
 .footer {
   background-color: #EEF2F3;
-  height: 10%;
+  position: static;
+  bottom: 0;
+
 }
 
 .footer p {
-  font-family: Roboto;
-  font-size: 13px;
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 12.5px;
   color: #515152;
 
 }

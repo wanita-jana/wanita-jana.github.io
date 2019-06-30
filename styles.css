@@ -284,6 +284,14 @@ video {
 
 @media (min-width: 320px) and (max-width: 768px) {
 
+.onecol {
+  width: 95%;
+}
+
+.app {
+  width: 100%;
+}
+
 .modal-dialog {
     max-width: 100%;
     margin: 0;

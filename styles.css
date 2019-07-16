@@ -95,7 +95,7 @@ nav li {
 /*CASE STUDIES*/
 .card {
   margin: 0 20px 20px 20px;
-  border-radius: 0;
+  border-radius: 20px;
   border: none;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0);
 }
@@ -107,6 +107,7 @@ nav li {
 
 .card img{
   width: 100%;
+  border-radius: 20px;
 }
 /*FLOATING LEFT AND CENTERING DIVS IN ANOTHER DIV*/
 .wrapper {

@@ -263,7 +263,12 @@ video {
 
 .projects img {
   cursor: pointer;
+  transition: all 0.3s ease 0s;
   
+}
+
+.projects img:hover {
+  transform: translateY(-7px);
 }
 
 .close {

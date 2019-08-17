@@ -22,7 +22,6 @@ h1 {
 }
 
 h2{
-  
   font-weight: 300;
   text-align: left;
   margin-top: 40px;
@@ -316,6 +315,11 @@ video {
 @media only screen and (min-width: 1024px) {
    .cards {
       margin: 15%; 
+   }
+
+   .icons {
+      width: 800px;
+      margin: auto;
    }
 }
 

@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -38,9 +37,9 @@
     <title>Wanita Jana</title>
     <link rel="shortcut icon" type="image/png" href="images/w-logo.png">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navScrollspy">
   <div id="topheader">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navScrollspy">
       <div class="container">
         <a class="navbar-brand" href="index.html">WJ</a>
         <button
@@ -57,16 +56,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link home-sec" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link about-sec" href="#about">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link work-sec" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact" href="contact.html">Contact</a>
+              <a class="nav-link" id="contact" href="images/WanitaJana.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -86,8 +82,13 @@
           data-aos-duration="600"
           style="color: #757473"
         >
-          I'm a passionate designer focused on UI/UX based in Markham, ON. 
+          UI/UX designer striving to create meaningful user experiences.
         </h4>
+        <p class="mt-4 contact">
+          <a href="https://dribbble.com/wanitajana" target="_blank"><i class="fab fa-dribbble" style="font-size: 24px;"></i></a>&emsp;&ensp;
+          <a href="mailto:janawanita@gmail.com"><i class="fas fa-envelope" style="font-size: 24px;"></i></a>&emsp;&ensp;
+          <a href="https://www.linkedin.com/in/wanita-jana-a88b27123/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 24px;"></i></a>&emsp;&ensp;
+        </p>
       </div>
     </section>
 
@@ -124,8 +125,7 @@
     <br>
 
     <!-- Work  -->
-    
-   
+  
       <h3
         class="section-title text-center"
         data-aos="fade-up"
@@ -222,7 +222,11 @@
       AOS.init();
     </script>
 
-    <script type="text/javascript" src="app.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fcc3d0a8de.js"></script>
 
+
+<!--     <script type="text/javascript" src="app.js"></script>
+ -->
   </body>
 </html>

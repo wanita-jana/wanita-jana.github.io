@@ -33,13 +33,15 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+     <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fcc3d0a8de.js"></script>
 
     <title>Wanita Jana</title>
     <link rel="shortcut icon" type="image/png" href="images/w-logo.png">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navScrollspy">
   <div id="topheader">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navScrollspy">
       <div class="container">
         <a class="navbar-brand" href="index.html">WJ</a>
         <button
@@ -56,16 +58,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="index.html#about">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="index.html#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" id="contact" href="images/WanitaJana.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -73,10 +72,11 @@
     </nav>
   </div>
 
-    <div  data-aos="fade-up" data-aos-duration="600" class="mt-5 pt-5 projects onecol container text-center">
-      
-      <h3 class="onecol" style="font-family: Lato; font-weight: 300;">Concept User Interfaces</h3>
-      <hr>
+    <div  data-aos="fade-up" data-aos-duration="600" class="mt-5 onecol projects width-sm container text-center">
+      <br>
+      <br>
+      <h1 class="text-center mt-2"><strong>Concept User Interfaces</strong></h1>
+      <h2 class="text-center mt-2 subheading">A Series of User Interfaces Designed using Adobe Creative Suite</h2>
 
        <div class="row">
         <div class="col-md-6">

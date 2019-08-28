@@ -14,6 +14,8 @@ nav {
   position: fixed; top:0;
 }
 
+/*HEADINGS*/
+
 h1 {
   font-family: Lato;
   font-weight: 200;
@@ -48,6 +50,11 @@ h6 {
   font-weight: 100;
   color: grey;
 }
+
+.subheading {
+  color: grey;
+}
+
 
 nav li {
   font-family: Nanum Gothic;
@@ -88,7 +95,7 @@ nav li {
   font-family: Lato;
   text-transform: uppercase;
   color: #90abb3;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 300;
   margin-top: 50px;
   text-align: left;
@@ -179,7 +186,6 @@ nav li {
 }
 
 .onecol {
-  width: 65%;
   text-align: left;
 }
 
@@ -227,6 +233,21 @@ nav li {
 
 /* contact */
 
+.contact i {
+  color: grey;
+  transition: all 0.3s ease 0s;
+}
+
+.contact i:hover {
+  color: #99c2cf;
+  transform: translateY(-4px);
+
+}
+
+.persona img{
+  width: 65%;
+}
+
 ul {
   color: black;
 }
@@ -261,6 +282,10 @@ video {
   outline: none;
 }
 
+.width-sm {
+  width: 70%;
+}
+
 .projects img {
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -290,6 +315,7 @@ video {
 }
 
 /*STRUCTFORM*/
+
 .box {
   background-color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.10);
@@ -298,18 +324,29 @@ video {
 }
 
 .box h4 {
-  color: #488895;
-  font-size: 20px;
+  font-family: Lato;
+  text-transform: uppercase;
+  color: #90abb3;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .box ul {
   list-style-type: none;
   padding-left: 0;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .blue {
   background-color: #F4FAFA;
+}
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
 }
 
 
@@ -327,6 +364,14 @@ video {
 @media (min-width: 320px) and (max-width: 563px) {
 
 .onecol {
+  width: 95%;
+}
+
+.box {
+  margin: 20px;
+}
+
+.persona img{
   width: 95%;
 }
 

@@ -286,6 +286,10 @@ video {
   width: 70%;
 }
 
+.sm img {
+  width: 70%;
+}
+
 .projects img {
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -369,6 +373,10 @@ video {
 
 .box {
   margin: 20px;
+}
+
+.sm img{
+  width: 95%;
 }
 
 .persona img{

@@ -4,6 +4,11 @@ body {
   width: 100%;
 }
 
+p, ol {
+  line-height: 26px;
+  color: #575757;
+}
+
 body {
   font-family: Lato;
   font-weight: 300;
@@ -18,9 +23,11 @@ nav {
 
 h1 {
   font-family: Lato;
-  font-weight: 200;
+  font-weight: 300;
   color: #2C2C2C;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 h2{
@@ -53,6 +60,7 @@ h6 {
 
 .subheading {
   color: grey;
+  font-size: 20px;
 }
 
 

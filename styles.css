@@ -364,12 +364,16 @@ video {
 
 @media only screen and (min-width: 1024px) {
    .cards {
-      margin: 15%; 
+      margin: 5%; 
    }
 
    .icons {
       width: 800px;
       margin: auto;
+   }
+
+   .persona-img  img{
+     width: 50%;
    }
 }
 

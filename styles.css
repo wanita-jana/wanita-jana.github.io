@@ -4,6 +4,10 @@ body {
   width: 100%;
 }
 
+#topheader .active {
+  font-weight: 500;
+}
+
 p, ol {
   line-height: 26px;
   color: #575757;
@@ -361,6 +365,32 @@ video {
     overflow-x: hidden;
 }
 
+.test-results {
+  line-height: 28px;
+}
+
+.test-results {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+.test-results li {
+  margin: 0;
+  padding: 0 0 0 4em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+.test-results li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: 400;
+  text-align: right;
+  content: counter(item) ".";
+}
 
 @media only screen and (min-width: 1024px) {
    .cards {
@@ -375,6 +405,18 @@ video {
    .persona-img  img{
      width: 50%;
    }
+
+   .caption {
+     width: 900px;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  #about img {
+    width: 300px;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 563px) {

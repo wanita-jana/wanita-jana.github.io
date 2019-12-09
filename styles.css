@@ -365,32 +365,14 @@ video {
     overflow-x: hidden;
 }
 
-.test-results {
-  line-height: 28px;
+.test-results li{
+  margin: 8px 0;
 }
 
 .test-results {
-  margin: 0 0 1.5em;
-  padding: 0;
-  counter-reset: item;
+	font-weight: bold;
 }
-
-.test-results li {
-  margin: 0;
-  padding: 0 0 0 4em;
-  text-indent: -2em;
-  list-style-type: none;
-  counter-increment: item;
-}
-
-.test-results li:before {
-  display: inline-block;
-  width: 1em;
-  padding-right: 0.5em;
-  font-weight: 400;
-  text-align: right;
-  content: counter(item) ".";
-}
+.test-results li span { font-weight: 300; }
 
 @media only screen and (min-width: 1024px) {
    .cards {

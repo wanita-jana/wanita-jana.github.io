@@ -365,14 +365,21 @@ video {
     overflow-x: hidden;
 }
 
+/* below adds spacing between lis */
 .test-results li{
   margin: 8px 0;
 }
 
 .test-results {
-	font-weight: bold;
+	font-weight: 400;
 }
-.test-results li span { font-weight: 300; }
+.test-results li span { 
+  font-weight: 300;
+  position: relative;
+  left: 5px;
+  
+}
+
 
 @media only screen and (min-width: 1024px) {
    .cards {

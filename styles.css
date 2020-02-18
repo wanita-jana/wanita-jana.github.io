@@ -10,10 +10,10 @@ body {
 
 p, ol {
   line-height: 26px;
-  color: #575757;
+  color: #2C2C2C;
 }
 
-body {
+body, li{
   font-family: Lato;
   font-weight: 300;
   color: #2C2C2C;
@@ -52,7 +52,6 @@ h5 {
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 2px;
-  margin-bottom: 20px;
   text-align: center;
 }
 

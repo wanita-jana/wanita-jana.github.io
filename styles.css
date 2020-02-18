@@ -120,11 +120,6 @@ nav li {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0);
 }
 
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-}
-
 .card img{
   width: 100%;
   border-radius: 20px;
@@ -153,9 +148,9 @@ nav li {
 
 /*button for case studies*/
 .card-body a {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 90px;
   background-color: #f9f8fa;
-  border: none;
+  border: grey solid 1px;
   border-radius: 24px;
   position: relative;
   color: grey;
@@ -166,7 +161,6 @@ nav li {
   font-weight: 400;
   letter-spacing: 2.5px;
   transition: all 0.3s ease 0s;
-
 }
 
 .card-body a:hover {

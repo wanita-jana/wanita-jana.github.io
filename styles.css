@@ -4,19 +4,30 @@ body {
   width: 100%;
 }
 
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+li{
+  margin: 10px 0;
+}
+
 #topheader .active {
   font-weight: 500;
 }
 
-p, ol {
-  line-height: 26px;
-  color: #2C2C2C;
+p {
+  line-height: 32px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
 }
 
 body, li{
+  font-size: 18px;
   font-family: Lato;
   font-weight: 300;
-  color: #2C2C2C;
+  color: rgb(0, 0, 0);
 }
 
 nav {
@@ -27,16 +38,17 @@ nav {
 
 h1 {
   font-family: Lato;
-  font-weight: 300;
-  color: #2C2C2C;
+  font-weight: 400;
+  color: rgb(14, 14, 14);
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 h2{
+  font-family: Lato, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: left;
   margin-top: 40px;
 }
@@ -47,7 +59,7 @@ h4 {
 
 h5 {
   margin-top: 40px;
-  font-family: Avenir;
+  font-family: Avenir, 'sans-serif';
   text-transform: uppercase;
   font-weight: 300;
   font-size: 14px;
@@ -63,12 +75,12 @@ h6 {
 
 .subheading {
   color: grey;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 
 nav li {
-  font-family: Lato;
+  font-family: Lato, 'sans-serif';
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -103,13 +115,14 @@ nav li {
 }
 
 .section-title {
-  font-family: Lato;
+  font-family: Avenir;
   text-transform: uppercase;
   color: #90abb3;
   letter-spacing: 2px;
   font-weight: 300;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: left;
+  font-size: 18px;
 }
 
 /*CASE STUDIES*/
@@ -295,15 +308,15 @@ video {
   width: 70%;
 }
 
-.projects img {
+.projects img, .wireframes img {
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  
 }
 
-.projects img:hover {
+.projects img:hover, .wireframes img:hover {
   transform: translateY(-7px);
 }
+
 
 .close {
   position: absolute;
@@ -324,6 +337,15 @@ video {
 }
 
 /*STRUCTFORM*/
+
+.problem p{
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.box li {
+  font-size: 16px;
+}
 
 .box {
   background-color: white;
@@ -349,7 +371,7 @@ video {
 }
 
 .blue {
-  background-color: #F4FAFA;
+  background-color: #F8FCFD;
 }
 
 .container-fluid.full-width {
@@ -399,9 +421,18 @@ video {
     width: 300px;
   }
 
+  h1 {
+    padding-left: 0;
+  }
+.subheading {
+    padding-left: 0;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 563px) {
+
+
 
 .onecol {
   width: 95%;
@@ -432,5 +463,27 @@ video {
     right: 0;
     display: flex;
 }
+}
+
+.container-small {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container-small {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-small {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-small {
+    width: 750px;
+  }
 }
   

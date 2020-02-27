@@ -45,6 +45,10 @@ h1 {
   font-size: 48px;
 }
 
+.padding-l {
+  padding-left: 0px;
+}
+
 h2{
   font-family: Lato, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
@@ -433,7 +437,6 @@ video {
 @media (min-width: 320px) and (max-width: 563px) {
 
 
-
 .onecol {
   width: 95%;
 }
@@ -484,6 +487,9 @@ video {
 @media (min-width: 1200px) {
   .container-small {
     width: 750px;
+  }
+  .padding-l {
+    padding-left: 100px;
   }
 }
   

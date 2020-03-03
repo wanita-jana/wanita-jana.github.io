@@ -19,7 +19,7 @@ li{
 
 p {
   line-height: 32px;
-  color: rgb(0, 0, 0);
+  color: rgb(31, 31, 31);
   font-size: 18px;
 }
 
@@ -27,7 +27,7 @@ body, li{
   font-size: 18px;
   font-family: Lato;
   font-weight: 300;
-  color: rgb(0, 0, 0);
+  color: rgb(14, 14, 14);
 }
 
 nav {
@@ -52,7 +52,7 @@ h1 {
 h2{
   font-family: Lato, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
   text-align: left;
   margin-top: 40px;
 }
@@ -123,7 +123,7 @@ nav li {
   text-transform: uppercase;
   color: #90abb3;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 100;
   margin-top: 30px;
   text-align: left;
   font-size: 18px;
@@ -135,6 +135,10 @@ nav li {
   border-radius: 20px;
   border: none;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0);
+}
+
+.card-text {
+  line-height: 20px;;
 }
 
 .card img{

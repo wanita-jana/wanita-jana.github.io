@@ -23,6 +23,12 @@ li{
 
 #topheader .active {
   font-weight: 500;
+  color: #61adc4;
+}
+
+.active a{
+  color: #61adc4!important;
+  font-weight: 500;
 }
 
 .border-radius {
@@ -42,9 +48,62 @@ body, li{
   color: rgb(14, 14, 14);
 }
 
+/* NAVBAR */
+
 nav {
   position: fixed; top:0;
 }
+
+nav li {
+  font-family: Lato, Roboto, 'sans-serif';
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+nav .navbar-nav li a:hover{
+  color: #61adc4!important;
+  transition: ease-in-out all .4s; 
+  -moz-transition: ease-in-out all .4s;
+  -webkit-transition: ease-in-out all .4s;
+  text-decoration:none;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+nav .navbar-nav li a:hover {
+  opacity: 1;
+}
+
+nav .navbar-nav li a::before {
+  transition: 300ms;
+  height: 1.5px;
+  content: "";
+  position: absolute;
+  background-color: #61adc4;
+}
+
+nav .navbar-nav li a::before {
+  width: 0%;
+  bottom: 12px;
+}
+
+nav .navbar-nav li a:hover::before {
+  width: 77%;
+}
+
+
 
 /*HEADINGS*/
 .showcase-top-margin {
@@ -62,6 +121,7 @@ nav {
 .showcase-caption {
   color: #5e5e5e;
   font-size: 20px;
+  line-height: 24px;
 }
 
 h1 {
@@ -115,13 +175,6 @@ h6 {
   font-family: Lato, Roboto, sans-serif;
   font-weight: 100;
   color: #61adc4;
-}
-
-
-nav li {
-  font-family: Lato, 'sans-serif';
-  text-transform: uppercase;
-  font-size: 15px;
 }
 
 .container img {

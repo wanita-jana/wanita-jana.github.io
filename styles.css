@@ -100,7 +100,7 @@ nav .navbar-nav li a::before {
 }
 
 nav .navbar-nav li a:hover::before {
-  width: 77%;
+  width: 55%;
 }
 
 
@@ -142,6 +142,7 @@ h2{
   font-size: 24px;
   font-weight: 400;
   text-align: left;
+  line-height: 34px;
   
 }
 
@@ -322,6 +323,10 @@ h6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: none;
   height: 100%;
+}
+
+.features img{
+  width: 280px;
 }
 
 .app {
@@ -526,6 +531,10 @@ video {
 
 .blue {
   background-color: #F8FCFD;
+}
+
+.darkblue {
+  background-color: rgb(59, 121, 136);
 }
 
 .container-fluid.full-width {

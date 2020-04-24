@@ -344,6 +344,15 @@ h6 {
   width: 70%;
 }
 
+.testing img {
+  width: 150px;
+}
+
+.testing p {
+  font-size: 16px;
+  line-height: initial;
+}
+
 /*MAYNOOTH*/
 
 .boxshadow img {
@@ -411,10 +420,6 @@ video {
 }
 
 .width-sm {
-  width: 70%;
-}
-
-.sm img {
   width: 70%;
 }
 
@@ -636,6 +641,17 @@ video {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* on screens 768px and under */
+@media (max-width: 768px) {
+
+  [class*="col-"] {
+      margin-bottom: 50px;
+      margin-top: 40px;
+  }
+
+}
+
 @media (min-width: 768px) {
   .container-small {
     width: 750px;

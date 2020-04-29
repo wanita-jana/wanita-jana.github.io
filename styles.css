@@ -345,7 +345,8 @@ h6 {
 }
 
 .testing img {
-  width: 150px;
+  width: 130px;
+  margin-bottom: 20px;
 }
 
 .testing p {

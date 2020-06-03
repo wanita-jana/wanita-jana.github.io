@@ -22,6 +22,10 @@ html  {
   vertical-align: middle;
 }
 
+body.modal-open {
+  overflow: visible;
+}
+
 .padding-0{
   padding-right:0;
   padding-left:0;

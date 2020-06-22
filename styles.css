@@ -2,6 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 html  {
@@ -307,7 +309,6 @@ h6 {
   background-color: #EEF2F3;
   position: static;
   bottom: 0;
-
 }
 
 .footer p {

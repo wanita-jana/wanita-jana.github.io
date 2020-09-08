@@ -674,14 +674,13 @@ video {
     width: 750px;
   }
 
-  .nav-link {
-    padding: 20px 0;
-  }
-
 }
 @media (min-width: 992px) {
   .container-small {
     width: 750px;
+  }
+  .nav-link {
+    padding: 20px 0;
   }
 }
 @media (min-width: 1200px) {

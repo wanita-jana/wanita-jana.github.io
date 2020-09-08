@@ -91,7 +91,7 @@ nav .navbar-nav li a:hover{
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 20px 0px;
+  padding: 0px 0px;
   margin: 0px 20px;
   display: inline-block;
   position: relative;
@@ -673,6 +673,11 @@ video {
   .container-small {
     width: 750px;
   }
+
+  .nav-link {
+    padding: 20px 0;
+  }
+
 }
 @media (min-width: 992px) {
   .container-small {

@@ -395,9 +395,24 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
+.bio a::before {
+  transition: 300ms;
+  height: 1.5px;
+  content: "";
+  position: absolute;
+  background-color: #99c2cf;
+  width: 0%;
+  bottom: -4px;
+}
+
+.bio a:hover:before {
+  width: 9.5%;
+}
+
 .bio a:hover {
   color: #99c2cf;
   transform: translateY(-4px);
+  text-decoration: none;
 }
 
 /* contact */
